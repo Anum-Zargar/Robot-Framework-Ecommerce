@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-02-28T13:34:11.523879" rpa="false" schemaversion="5">
+<suite id="s1" name="ChildWindow" source="E:\robotframework\pythonProject1\Tests\ChildWindow.robot">
+<test id="s1-t1" name="Validate Child Window Functionality" line="19">
+<kw name="open the browser with the mortgage payment url" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-28T13:34:11.789898" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-28T13:34:11.789898" elapsed="2.410761"/>
+</kw>
+<status status="PASS" start="2024-02-28T13:34:11.788974" elapsed="2.411685"/>
+</kw>
+<kw name="Select the link of child Window">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-28T13:34:14.203725" level="INFO">Clicking element 'css:.blinkingText'.</msg>
+<arg>css:.blinkingText</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-28T13:34:14.202987" elapsed="0.090343"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-28T13:34:19.306649" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-28T13:34:14.294503" elapsed="5.013142"/>
+</kw>
+<status status="PASS" start="2024-02-28T13:34:14.202693" elapsed="5.104952"/>
+</kw>
+<kw name="Verify the User is Switched to Child Window">
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-28T13:34:19.312794" elapsed="0.054390"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-28T13:34:19.369382" level="INFO">Verifying element 'css:h1' contains exact text 'DOCUMENTS REQUEST'.</msg>
+<arg>css:h1</arg>
+<arg>DOCUMENTS REQUEST</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-28T13:34:19.367184" elapsed="0.094215"/>
+</kw>
+<status status="PASS" start="2024-02-28T13:34:19.310765" elapsed="0.150634"/>
+</kw>
+<kw name="Grab the Email id in the Child Window">
+<msg time="2024-02-28T13:34:19.463663" level="FAIL">User keyword cannot be empty.</msg>
+<status status="FAIL" start="2024-02-28T13:34:19.462605" elapsed="0.001058">User keyword cannot be empty.</status>
+</kw>
+<kw name="Switch to Parent Window and enter email">
+<status status="NOT RUN" start="2024-02-28T13:34:19.464712" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-28T13:34:11.788974" elapsed="7.675738">User keyword cannot be empty.</status>
+</test>
+<doc>Login Details for Rahul Shetty</doc>
+<status status="FAIL" start="2024-02-28T13:34:11.526893" elapsed="7.940928"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="ChildWindow">ChildWindow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
